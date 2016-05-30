@@ -1,0 +1,257 @@
+/**** Global Properties *****/
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	position: relative;
+}
+a:focus{
+	outline: transparent;	
+}
+/**** Left Panel Properties ****/
+
+.left-panel{
+	background: #fbfbfb;
+	border-right: 1px solid #ccc;
+	padding: 0px;
+}
+.logo{
+	background-color: #D30418;
+	padding: 10px;
+}
+
+.logo h4{
+	color: #fff;
+	font-size: 19px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.profile-icon{
+ 	padding: 0px;
+}
+.profile-details{
+   background-color: #FBFBFB;
+   border-bottom: solid 1px #ccc;
+}
+
+.profile-details .col-md-5{
+ 	padding: 10px 10px 5px 0px;
+}
+
+.profile-details .col-md-5 .profile-name{
+ 	display: block;
+}
+
+.profile-details .col-md-5 .fa-circle{
+	color: #7FE175;
+}
+
+.profile-details .logout-button{
+ 	margin-top: 20px;
+}
+
+.logout-button input[type="button"]{
+	border: 1px solid #A7A7A7;
+	border-radius: 4px;
+	color:#fff;
+	background: #A7A7A7;
+	padding: 4px 13px;
+}
+
+.left-panel .blank-div{
+	height:100px;
+	background: #fff;
+}
+
+.left-panel-menu{
+	background: #FBFBFB;
+	border-bottom: solid 1px #ccc;
+	padding: 14px
+}
+
+.left-panel-menu a{
+	color: #000;
+	text-decoration: none;
+}
+
+.left-panel-menu i{
+	margin: 0 16px;
+}
+
+/*.profile-details, .left-panel-menu{
+	border-right: 1px solid #ccc;
+}*/
+
+/**** Nav TabPane Properties ****/
+#nav-tabs{
+	padding: 0px;
+}
+
+#nav-tabs .tabs-menu{
+	background: #FC0000;
+}
+
+#nav-tabs .tabs-menu li a{
+	color: #fff;
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+#nav-tabs .col-md-12 li.active a{
+	background: transparent;
+}
+
+#nav-tabs .col-md-12 li a:hover{
+	background: #D30418;
+	border-radius: 0px;
+}
+
+#nav-tabs .col-md-12 .pull-right .fa-question-circle-o{
+	color: #fff;
+	font-size: 22px;
+	margin-top: 19px;
+}
+
+/**** Dashboard Tab Content Properties ****/
+.tab-content #dashboard .search-filters{
+	border-bottom: 1px solid #ccc;
+	padding: 20px 0 38px 40px;
+	clear: both;
+}
+.tab-content #dashboard .dropdown{
+	padding: 0;
+}
+.tab-content #dashboard .dropdown .btn{
+	background: #fff;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid #ccc; 
+	border-radius: 0px;
+	padding: 0px;
+}
+
+.tab-content #dashboard .search-filters .date-form{
+	padding: 0;
+}
+
+.tab-content #dashboard .search-filters .date-form label,
+.tab-content #dashboard .search-filters .date-form .glyphicon-calendar,
+.tab-content #dashboard .search-filters .date-form input{
+	float: left;
+}
+
+.tab-content #dashboard .search-filters .date-form label{
+	margin-left: 10px;
+}
+
+.tab-content #dashboard .search-filters .date-form .glyphicon-calendar{
+	padding: 4px;
+}
+
+.tab-content #dashboard .search-filters .date-form input{
+	width: 85px;
+}
+.tab-content #dashboard #nav-tabs-dashboard{
+	padding: 0;
+}
+
+.tab-content #dashboard #nav-tabs-dashboard .tabs-menu{
+	background: #FBFBFB;
+	border-bottom: 1px solid #ccc;
+}
+
+.tab-content #dashboard #nav-tabs-dashboard .tabs-menu li a{
+	color: #000;
+	font-weight: bold;
+	padding: 14px;
+	text-transform: none;
+}
+
+.tab-content #dashboard #nav-tabs-dashboard .tabs-menu li.active a{
+	color: #f00;
+}
+
+.tab-content #dashboard #nav-tabs-dashboard .tabs-menu li a:hover{
+	background: none;
+}
+
+.tab-content #dashboard #nav-tabs-dashboard .tabs-menu .controls i{
+	padding: 15px 10px;
+}
+
+.tab-content #dashboard #nav-tabs-dashboard .social-feed{
+	border-bottom: 1px solid #ccc;
+	padding: 6px;
+}
+.tab-content #dashboard #nav-tabs-dashboard .social-feed > div{
+	display: inline-block;
+	padding: 10px;
+}
+
+.tab-content #dashboard #nav-tabs-dashboard .social-feed .fa-pinterest{
+	color: #f00;
+}
+.tab-content #dashboard #nav-tabs-dashboard .social-feed .fa-twitter{
+	color: #62ACF3;
+}
+
+/**** Pagination Properties ****/
+.pagination.disabled a,  .pagination.disabled a:hover,  .pagination.disabled a:focus,  .pagination.disabled span {
+  color: #eee;
+  background: #fff;
+  cursor: default;
+}
+
+.pagination { float: right; }
+
+.pagination li a{
+	border: none;
+	color: #000;
+}
+
+.tab-content #dashboard #nav-tabs-dashboard .pagination li.active a{
+	background: #D30418;
+	border-radius: 18px;	
+}
+
+.tab-content #dashboard #nav-tabs-dashboard .pagination li a:hover{
+	color: #fff;
+	border-radius: 18px;
+}
+
+.pagination.disabled li.active a {
+  color: #fff;
+  background: #cccccc;
+  border-color: #cccccc;
+}
+
+.paging-container p{
+	margin-left: 15px; 
+}
+
+.paging-container select {
+  background: none;
+  margin: 20px 10px 20px 10px;
+  padding: 9px 3px;
+  border-color: #ddd;
+  border-radius: 4px;
+}
+
+.pagination{
+	padding: 9px 20px 40px 0px;
+}
+
+/**** Footer Properties ****/
+.footer{
+	background: #EAEAEA;
+	border-bottom: 2px solid #f00;
+	bottom: 0;
+	color: #ccc;
+	padding-top: 14px;
+	position: fixed;
+	text-align: center;
+	z-index: 9;
+}

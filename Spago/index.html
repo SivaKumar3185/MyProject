@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spago</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/multiple-select.css" />
+</head>
+
+<body>
+<div class="page">
+    <div class="col-md-12 left-panel">
+        <div class="col-md-2 logo">
+            <h4>Logo</h4>
+        </div>
+        <div class="col-md-4 profile-details">
+            <div class="col-md-3 profile-icon">
+                <img src="images/profile.jpg" class="img-responsive" />
+            </div>
+            <div class="col-md-5">
+                <span class="profile-name">Addri Anna</span>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <span>Online</span>
+            </div>
+            <div class="col-md-4 logout-button">
+                <input type="button" value="Logout" />
+            </div>
+        </div>
+        <!-- <div class="col-md-12  left-panel-menu">
+            <a href="#">
+	            <span class="span-margin"><i class="fa fa-car" aria-hidden="true"></i></span>
+	            <span>New Car Buyer</span>
+	        </a>
+        </div>
+        <div class="col-md-12 blank-div left-panel-menu">
+
+        </div>
+        <div class="col-md-12  left-panel-menu">
+        	<a href="#">
+	            <span class="span-margin"><i class="fa fa-user" aria-hidden="true"></i></span>
+	            <span>Dealer</span>
+            </a>
+        </div>
+        <div class="col-md-12  left-panel-menu">
+        	<a href="#">
+	            <span class="span-margin"><i class="fa fa-first-order" aria-hidden="true"></i></span>
+	            <span>Spare Parts</span>
+            </a>
+        </div>
+        <div class="col-md-12  left-panel-menu">
+        	<a href="#">
+	            <span class="span-margin"><i class="fa fa-car" aria-hidden="true"></i></span>
+	            <span>Repair & Services</span>
+            </a>
+        </div>
+        <div class="col-md-12 left-panel-menu">
+        	<a href="#">
+	            <span class="span-margin"><i class="fa fa-car" aria-hidden="true"></i></span>
+	            <span>Event</span>
+            </a>
+        </div>-->
+    </div>
+    <div id="nav-tabs" class="col-md-12">
+        <div class="col-md-12 tabs-menu clearfix">
+            <ul class="nav nav-pills pull-left">
+                <li class="active"><a href="#dashboard" data-toggle="tab">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#user-management" data-toggle="tab">User Management</a>
+                </li>
+                <li><a href="#reports" data-toggle="tab">Reports</a>
+                </li>
+                
+            </ul>
+
+            <div class="pull-right">
+                <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="tab-content clearfix">
+            <div class="tab-pane" id="user-management">
+                <h3>User Management</h3>
+
+            </div>
+            <div class="tab-pane" id="reports">
+                <h3>Reports</h3>
+            </div>
+            <div class="tab-pane active clearfix" id="dashboard">
+                <div class="search-filters">
+                    <div class="dropdown col-md-2">
+                        
+                        <div class="form-group">
+                            <select id="ms" multiple="multiple">
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+
+                        <!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Select Category
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Select Category1</a>
+                            </li>
+                            <li><a href="#">Select Category2</a>
+                            </li>
+                            <li><a href="#">Select Category3</a>
+                            </li>
+                        </ul> -->
+                    </div>
+                    <div class="dropdown col-md-2">
+
+                    <div class="form-group">
+                            <select id="ms1" multiple="multiple">
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+
+
+                        <!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Select Status
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Select Status</a>
+                            </li>
+                            <li><a href="#">Select Status</a>
+                            </li>
+                            <li><a href="#">Select Status</a>
+                            </li>
+                        </ul> -->
+                    </div>
+                    <div class="dropdown col-md-2">
+
+                        <div class="form-group">
+                            <select id="ms2" multiple="multiple">
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+
+                        <!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Select Source
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Select Source</a>
+                            </li>
+                            <li><a href="#">Select Source</a>
+                            </li>
+                            <li><a href="#">Select Source</a>
+                            </li>
+                        </ul> -->
+                    </div>
+                    <div class="date-form col-md-2">
+
+                        <label for="from">From</label>
+                        <span class="glyphicon glyphicon-calendar"> </span>
+                        <input type="text" id="from" name="from" class="">
+
+                        <!-- <div class="form-horizontal">
+                            <div class="control-group">
+                                <label for="date-picker-1" class="control-label">From <span class="glyphicon glyphicon-calendar"> </span>
+
+                                </label>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="date-form col-md-2">
+
+                        <label for="to">To</label>
+                        <span class="glyphicon glyphicon-calendar"> </span>
+                        <input type="text" id="to" name="to">
+
+                        <!-- <div class="form-horizontal">
+                            <div class="control-group">
+                                <label for="date-picker-1" class="control-label">To <span class="glyphicon glyphicon-calendar"> </span>
+
+                                </label>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div id="nav-tabs-dashboard" class="col-md-12">
+	                <div class="col-md-12 tabs-menu clearfix">
+			            <ul class="nav nav-pills pull-left">
+			                <li class="active">
+			                    <a href="#conversation" data-toggle="tab">Conversation</a>
+			                </li>
+			                <li><a href="#history" data-toggle="tab">History</a>
+			                </li>
+			                <li><a href="#footenote" data-toggle="tab">Footenote</a>
+			                </li>
+			            </ul>
+			            <div class="controls pull-right">
+			            	<i class="fa fa-print" aria-hidden="true"></i>
+			            	<i class="fa fa-trash" aria-hidden="true"></i>
+			            </div>
+			        </div>
+
+			        <div class="tab-content clearfix">
+			            <div class="tab-pane active wrapper" id="conversation">
+			                <!-- <div class="col-md-12 social-feed">
+			                    <div class="">
+			                        <input type="checkbox" />
+			                    </div>
+			                    <div class="">
+			                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+			                    </div>
+			                    <div class="">
+			                        MY favourite car is Toyta. MY favourite car is Toyta. MY favourite car is Toyta. MY favourite car is Toyta. MY favourite car is Toyta.
+			                    </div>
+			                    <div class="pull-right">
+			                        <i class="fa fa-retweet" aria-hidden="true"></i>
+			                    </div>
+			                </div>
+			                <div class="col-md-12 social-feed">
+			                    <div class="">
+			                        <input type="checkbox" />
+			                    </div>
+			                    <div class="">
+			                        <i class="fa fa-twitter" aria-hidden="true"></i>
+			                    </div>
+			                    <div class="">
+			                        MY favourite car is Toyta. MY favourite car is Toyta. MY favourite car is Toyta. MY favourite car is Toyta. MY favourite car is Toyta.
+			                    </div>
+			                    <div class="pull-right">
+			                        <i class="fa fa-retweet" aria-hidden="true"></i>
+			                    </div>
+			                </div>
+			                <div class="col-md-12 social-feed">
+			                    <div class="">
+			                        <input type="checkbox" />
+			                    </div>
+			                    <div class="">
+			                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+			                    </div>
+			                    <div class="">
+			                        MY favourite car is Toyta. MY favourite car is Toyta. MY favourite car is Toyta. MY favourite car is Toyta. MY favourite car is Toyta.
+			                    </div>
+			                    <div class="pull-right">
+			                        <i class="fa fa-retweet" aria-hidden="true"></i>
+			                    </div>
+			                </div>
+			                <div class="col-md-12 social-feed">
+			                    <div class="">
+			                        <input type="checkbox" />
+			                    </div>
+			                    <div class="">
+			                        <i class="fa fa-twitter" aria-hidden="true"></i>
+			                    </div>
+			                    <div class="">
+			                        MY favourite car is Toyta. MY favourite car is Toyta. MY favourite car is Toyta. MY favourite car is Toyta. MY favourite car is Toyta.
+			                    </div>
+			                    <div class="pull-right">
+			                        <i class="fa fa-retweet" aria-hidden="true"></i>
+			                    </div>
+			                </div> -->
+
+			            </div>
+			            <div class="tab-pane" id="history">
+			                <h3>History</h3>
+			            </div>
+			            <div class="tab-pane" id="footenote">
+			                <h3>Footenote</h3>
+			            </div>
+                        <div class="paging-container" id="Paging"> </div>
+                        <!-- <div class="pagination col-md-12">
+                            <label >Show</label>
+                            <select name="perpage">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <label>Per Page</label>
+
+                            <p class="pull-right"> 
+                                <a class="action" href="javascipt:void(0)" rel="first">first</a> | 
+                                <a class="action" href="javascipt:void(0)" rel="prev">prev</a>
+                                (<span id="count2"></span> / <span id="total2"></span>)
+                                <a class="action" href="javascipt:void(0)" rel="next">next</a>|    
+                                <a class="action" href="javascipt:void(0)" rel="last">last</a>
+                            </p>
+                        </div> -->
+			        </div>
+		        </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 footer">
+    	<p> Copyrights &copy; 2016 South East Asia	Pvt Ltd. </p>
+    </div>
+</div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/pagination.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/multiple-select.js"></script>
+        <script src="js/pager.js"></script>
+</body>
+
+</html>
